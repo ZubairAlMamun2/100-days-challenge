@@ -1,6 +1,22 @@
 import java.util.*;
 
-public class palindrome{
+public class problemsolving{
+    public static boolean sqart(int x){
+       if(x==0){
+          return false;
+      }
+
+      while(x%2==0){
+          x = x/2 ;
+      }
+
+      if(x==1){
+          return true ;
+      }else{
+          return false;
+      }
+    }
+
     public static boolean pal(int num) {
     
         int copy=num;
@@ -24,10 +40,9 @@ public class palindrome{
         
     }
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        int num =sc.nextInt();
         
-         System.out.println( pal(num));
+        int num =8;
         
+        System.out.println(sqart(num));
     }
 }
