@@ -1,6 +1,30 @@
 import java.util.*;
 
 public class problemsolving{
+
+    //day-3
+    public static int fibonacci(int n){
+        int a=0,b=1,c=1,temp,sum=0;
+        
+        if(n==1){
+
+            sum=0;
+        }
+        else if(n>1){
+            for(int i=0;i<n-2;i++){
+                temp=b;
+                c=b+c;
+                b=a+b;
+                a=temp;
+                sum =sum+b;
+            }
+            sum =a+b;
+        }
+        return sum;
+    }
+
+
+    //day-2
     public static boolean sqart(int x){
        if(x==0){
           return false;
@@ -17,7 +41,9 @@ public class problemsolving{
       }
     }
 
-    public static boolean pal(int num) {
+
+    //day-1
+    public static boolean pallindrome(int num) {
     
         int copy=num;
         int pall=0;
@@ -41,8 +67,8 @@ public class problemsolving{
     }
     public static void main(String[] args) {
         
-        int num =8;
+        int num =7;
         
-        System.out.println(sqart(num));
+        System.out.println(fibonacci(num));  
     }
 }
