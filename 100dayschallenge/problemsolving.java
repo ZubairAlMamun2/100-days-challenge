@@ -1,26 +1,52 @@
 import java.util.*;
 
 public class problemsolving{
+    //day-4
+    public static int tribonnaci(int n) {
+        int firstnum =0;
+        int secondnum=1;
+        int thirdnum=1;
+         if(n==0){
+            return 0;
+        }
+        else if(n==1){
+            return 1;
+        }
+        else if(n==2){
+            return 1;
+        }
+        else{
+            for(int i=1;i<=n;i++){
+            int fourthnum= firstnum+secondnum+thirdnum;
+            firstnum=secondnum;
+            secondnum=thirdnum;
+            thirdnum=fourthnum;
+            
+            
+        }
+        return firstnum;
+        }
+    }
 
     //day-3
     public static int fibonacci(int n){
-        int a=0,b=1,c=1,temp,sum=0;
-        
-        if(n==1){
+        if(n==0){
+            return 0;
+        }
+        else if(n==1){
+            return 1;
+        }
+        else{
+        int ft = 0 ;
+        int st = 1 ;
 
-            sum=0;
+        for(int i=1 ; i<=n;i++){
+            int tt = ft + st ;
+            ft = st ;
+            st = tt ;
         }
-        else if(n>1){
-            for(int i=0;i<n-2;i++){
-                temp=b;
-                c=b+c;
-                b=a+b;
-                a=temp;
-                sum =sum+b;
-            }
-            sum =a+b;
-        }
-        return sum;
+
+        return ft ;}
     }
 
 
@@ -67,8 +93,8 @@ public class problemsolving{
     }
     public static void main(String[] args) {
         
-        int num =7;
+        int num =25;
         
-        System.out.println(fibonacci(num));  
+        System.out.println(tribonnaci(num));  
     }
 }
