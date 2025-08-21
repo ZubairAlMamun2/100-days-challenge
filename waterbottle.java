@@ -13,6 +13,6 @@ public class waterbottle {
         return result;
     }
     public static void main(String[] args) {
-        System.out.println(numWaterBottles(15,4));
+        System.out.println(numWaterBottles(9,3));
     }
 }

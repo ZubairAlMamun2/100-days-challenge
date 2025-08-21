@@ -1,7 +1,7 @@
 public class tribonnaci {
 
     //day-4
-    public static int tribonnaci(int n) {
+    public static int tribonnacii(int n) {
         int firstnum =0;
         int secondnum=1;
         int thirdnum=1;
@@ -29,6 +29,6 @@ public class tribonnaci {
 
 
     public static void main(String[] args) {
-        System.out.println(tribonnaci(5));
+        System.out.println(tribonnacii(5));
     }
 }
