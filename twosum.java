@@ -1,24 +1,20 @@
 public class twosum {
+
+    //day-6
+
     public static int[] twoSum( int target) {
-        int[] nums={2,7,11,15};;
-        int num1=-1,num2=-1;
-        for(int i=0;i<nums.length;i++ ){
-            for(int j=0;j<nums.length;j++){
-                if(i==j){
-                    continue;
-                }
-                int sum=nums[i]+nums[j];
-                
-                if(sum==target){
-                    num1 = i;
-                    num2 = j;
-                    System.out.println(i + " f " + j);
-                    return new int[]{num1,num2};
+        int[] nums={2,7,4,5};
+        int[] ans = new int[2];
+
+        for(int i=0;i<nums.length;i++){
+            for(int j = i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==target){
+                    ans[0]=i;
+                    ans[1]=j;
                 }
             }
         }
-        
-        return new int[]{};
+          return ans ;
     }
     public static void main(String[] args) {
 
