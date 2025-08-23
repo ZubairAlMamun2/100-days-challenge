@@ -1,6 +1,9 @@
 import java.util.*;
 
 public class arraytoint {
+    //day-7
+
+    
     public static List<Integer> addToArrayForm( int k) {
         List<Integer> ans = new ArrayList<>();
         int[] num = {2,0,5};
