@@ -1,9 +1,7 @@
 public class missingnumber {
 
     //day-10
-    public static int missingNumber() {
-
-        int[] nums={7,6,4,2,3,5,8,0,1};
+    public static int missingNumber(int[] nums) {
 
         int num=nums.length;
         int flag=0;
@@ -22,6 +20,8 @@ public class missingnumber {
         return num;
     }
     public static void main(String[] args) {
-        System.out.println(missingNumber());
+        int nums[] ={7,6,4,2,3,5,8,0,1};
+        int ans= missingNumber(nums);
+        System.out.println(ans);
     }
 }
